@@ -7,6 +7,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   title: string;
   iconName: 'action' | 'comedy' | 'documentary' | 'drama' | 'horror' | 'family';
   selected: boolean;
+  onClick: (id: number) => void;
 }
 
 export function Button({ iconName, title, selected, ...rest }: ButtonProps) {
